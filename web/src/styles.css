@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-image {
+    background-image: url(src/assets/images/fondo.png);
+  }
+
+
+.card {
+    background-color: #70069e;
+    color: #fff;
+}
+
+.p {
+    text-align: center;
+}
+
+.bg-login-image {
+    background-size: cover;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.text-gray-900 {
+    color: #fff;
+}
+
+hr {
+    border-color: #fff;
+}
+
+.btn-1 {
+    /* Agrega estilos de tu botón aquí */
+    background-color: #a20ab6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: #fff;
+}

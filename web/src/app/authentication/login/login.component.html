@@ -1,40 +1,49 @@
-
-<div class="container">
+<div class="container mb-4">
 
   <!-- Outer Row -->
+  <div class="d-flex p-5"> <br> <br></div>
   <div class="row justify-content-center">
-
-    <div class="col-xl-10 col-lg-12 col-md-9">
-
-      <div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="col-xl-7 col-md-7">
+      <div class="card o-hidden border-1 shadow-lg my-5">
         <div class="card-body p-0">
           <!-- Nested Row within Card Body -->
           <div class="row">
-            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-            <div class="col-lg-6">
-              <div class="p-5">
+           
+              <div class="p-4">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
+                  width="100px" class="rounded mx-auto d-block" alt="">
+                  <br>
                 <div class="text-center">
-                  <h1 class="h4 text-gray-900 mb-4">Bienvenidos</h1>
+                  <h1 class="h4 text-white-900 mb-4"> Bienvenidos</h1>
                 </div>
                 <form class="user" (ngSubmit)="onLogin(formLogin)" #formLogin="ngForm">
-                  <div class="form-group">
-                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                      aria-describedby="emailHelp" placeholder="Correo"  name="correo" ngModel>
+                  <div class="d-grid col-6 mx-auto">
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                        aria-describedby="emailHelp" placeholder="Correo" name="correo" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" id="exampleInputPassword"
+                        placeholder="Clave" name="clave" ngModel autocomplete="on">
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-                      placeholder="Clave" name="clave" ngModel autocomplete="on">
+                  <div class="d-grid  col-3 mx-auto">
+                    <button class="btn-1">
+                      Aceder
+                    </button>
                   </div>
-
-                  <button type="submit" class="btn btn-primary btn-user btn-block">
-                    Iniciar sesión
-                  </button>
                 </form>
 
                 <hr>
-                <p>Si no tiene cuenta aún debe <a href="/signup">Registrarse</a></p>
+                <div class="text-end">
+                  <p><a href="/olvContraseña">¿Olvidó su Contraseña?</a></p>
+                </div>
+                <div class="text-end">
+                  <p><a href="/olvUsuario">¿Olvidó su Usuario?</a></p>
+                </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </div>
